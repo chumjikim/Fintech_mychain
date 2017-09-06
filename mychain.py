@@ -35,8 +35,8 @@ def show_transaction_list():
     import logging
     tx_list = transaction.get_transactions()
     if len(tx_list) == 0:
-        print("No Transaction")
-        main_menu
+        print("No Transaction\n")
+        main_menu()
     else:
         for t in tx_list:
             log.write(t.message, logging.DEBUG)
@@ -81,10 +81,10 @@ import threading
 from app.communicator import receiver
 
 storage.init()
-node.add_node(node.Node("192.168.40.169"))
+node.add_node(node.Node("192.168.40.18"))
 node.add_node(node.Node("192.168.40.17"))
 node.add_node(node.Node("192.168.40.6"))
 # transaction.add_transaction(transaction.create_tx("","","aaa"))
-listen_thread = threading.Thread(target=receiver.start, args=("LT", "192.168.40.169", 3399))
+listen_thread = threading.Thread(target=receiver.start, args=("LT", "192.168.40.18", 3399))
 listen_thread.start()
 main_menu()

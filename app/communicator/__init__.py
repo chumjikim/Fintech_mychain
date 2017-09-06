@@ -7,7 +7,7 @@ import zmq
 from app import log
 from app import node
 
-PING_PORT_NUMBER = 3366
+PING_PORT_NUMBER = 3399
 PING_MSG_SIZE = 1
 PING_INTERVAL = 5  # Once per second
 

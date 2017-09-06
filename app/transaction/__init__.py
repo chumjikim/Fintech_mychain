@@ -81,5 +81,6 @@ def create_tx(pub_key, pri_key, msg):
 
     return tx
 
+
 def send_tx(tx):
     sender.send_to_all_node(tx.to_json())
