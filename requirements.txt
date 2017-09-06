@@ -1,0 +1,7 @@
+click==6.7
+ecdsa==0.13
+netifaces==0.10.6
+python-dateutil==2.6.1
+pyzmq==16.0.2
+six==1.10.0
+SQLAlchemy==1.1.13
